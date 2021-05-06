@@ -12,6 +12,6 @@ function draw() {
   textAlign(CENTER);
   fill(color(2, 53, 86));
   text("Lucy Laidlaw", width/2, height/2);
-  fill(color(166, 220, 245));
+  fill(color(143, 206, 236));
   text("Lucy Laidlaw", width/2+2, height/2+2);
 }
