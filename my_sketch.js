@@ -17,10 +17,10 @@ function draw() {
 
   let cent_dist = dist(mouseX, mouseY, width/2, height/2);
   if(cent_dist < 100) {
-    background(color(2, 53, 86));
-    fill(color(189, 230, 249));
+    background(color(247, 168, 207));
+    fill(color(252, 146, 32));
     text("Lucy Laidlaw", width/2, height/2);
-    fill(color(143, 206, 236));
+    fill(color(248, 130, 201));
     text("Lucy Laidlaw", width/2+2, height/2+2);
   }
 
