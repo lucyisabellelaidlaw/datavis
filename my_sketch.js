@@ -58,8 +58,15 @@ function changeTheme(colString) {
 }
 
 function drawSquares() {
-  fill(color(251, 204, 232))
+  //Pink square
+  fill(color(255, 187, 227))
   square(20, 20, 40);
-  fill(color(192, 254, 169));
+
+  //Green square
+  fill(color(173, 255, 143));
+  square(70, 20, 40);
+
+  //Blue square
+  fill(color(165, 225, 254));
   square(70, 20, 40);
 }
