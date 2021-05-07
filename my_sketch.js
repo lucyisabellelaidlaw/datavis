@@ -64,9 +64,9 @@ function drawSquares() {
 
   //Green square
   fill(color(173, 255, 143));
-  square(70, 20, 40);
+  square(60, 20, 40);
 
   //Blue square
   fill(color(165, 225, 254));
-  square(70, 20, 40);
+  square(100, 20, 40);
 }
