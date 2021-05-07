@@ -7,6 +7,22 @@ function setup() {
 function draw() {
   background(color(189, 230, 249));
 
+  fill(color(251, 204, 232))
+  square(20, 20, 50);
+  fill(color(192, 254, 169));
+  square(70, 20, 50);
+
+  let pink_dist = dist(mouseX, mouseY, 20+25, 20+25);
+  let green_dist = dist(mouseX, mouseY, 20+50+25, 20+25);
+
+  if(pink_dist <= 25) {
+    changeTheme("Pink");
+  }
+
+  if(green_dist <= 25) {
+    changeTheme("Green");
+  }
+
   textSize(50);
   textFont(cool_font);
   textAlign(CENTER);
@@ -15,13 +31,26 @@ function draw() {
   fill(color(143, 206, 236));
   text("Lucy Laidlaw", width/2+2, height/2+2);
 
-  let cent_dist = dist(mouseX, mouseY, width/2, height/2);
-  if(cent_dist < 100) {
+
+
+}
+
+function changeTheme(colString) {
+  if(colString=="Pink") {
+
     background(color(251, 204, 232));
     fill(color(252, 146, 32));
     text("Lucy Laidlaw", width/2, height/2);
     fill(color(247, 168, 207));
     text("Lucy Laidlaw", width/2+2, height/2+2);
-  }
 
+  } else if(colString=="Green") {
+
+    background(color((192, 254, 169)));
+    fill(color(1, 137, 34));
+    text("Lucy Laidlaw", width/2, height/2);
+    fill(color(89, 249, 94));
+    text("Lucy Laidlaw", width/2+2, height/2+2);
+
+  }
 }
