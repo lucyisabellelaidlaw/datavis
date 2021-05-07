@@ -7,13 +7,10 @@ function setup() {
 function draw() {
   background(color(189, 230, 249));
 
-  fill(color(251, 204, 232))
-  square(20, 20, 50);
-  fill(color(192, 254, 169));
-  square(70, 20, 50);
+  drawSquares();
 
-  let pink_dist = dist(mouseX, mouseY, 20+25, 20+25);
-  let green_dist = dist(mouseX, mouseY, 20+50+25, 20+25);
+  let pink_dist = dist(mouseX, mouseY, 20+20, 20+20);
+  let green_dist = dist(mouseX, mouseY, 20+40+20, 20+20);
 
 
   textSize(50);
@@ -37,12 +34,10 @@ function draw() {
 function changeTheme(colString) {
   if(colString=="Pink") {
 
-    fill(color(251, 204, 232))
-    square(20, 20, 50);
-    fill(color(192, 254, 169));
-    square(70, 20, 50);
-
     background(color(251, 204, 232));
+
+    drawSquares();
+
     fill(color(252, 146, 32));
     text("Lucy Laidlaw", width/2, height/2);
     fill(color(247, 168, 207));
@@ -50,16 +45,21 @@ function changeTheme(colString) {
 
   } else if(colString=="Green") {
 
-    fill(color(251, 204, 232))
-    square(20, 20, 50);
-    fill(color(192, 254, 169));
-    square(70, 20, 50);
+    background(color(192, 254, 169));
 
-    background(color((192, 254, 169)));
+    drawSquares();
+
     fill(color(1, 137, 34));
     text("Lucy Laidlaw", width/2, height/2);
     fill(color(89, 249, 94));
     text("Lucy Laidlaw", width/2+2, height/2+2);
 
   }
+}
+
+function drawSquares() {
+  fill(color(251, 204, 232))
+  square(20, 20, 40);
+  fill(color(192, 254, 169));
+  square(70, 20, 40);
 }
