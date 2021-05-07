@@ -15,13 +15,6 @@ function draw() {
   let pink_dist = dist(mouseX, mouseY, 20+25, 20+25);
   let green_dist = dist(mouseX, mouseY, 20+50+25, 20+25);
 
-  if(pink_dist <= 25) {
-    changeTheme("Pink");
-  }
-
-  if(green_dist <= 25) {
-    changeTheme("Green");
-  }
 
   textSize(50);
   textFont(cool_font);
@@ -31,12 +24,23 @@ function draw() {
   fill(color(143, 206, 236));
   text("Lucy Laidlaw", width/2+2, height/2+2);
 
+  if(pink_dist <= 25) {
+    changeTheme("Pink");
+  }
 
+  if(green_dist <= 25) {
+    changeTheme("Green");
+  }
 
 }
 
 function changeTheme(colString) {
   if(colString=="Pink") {
+
+    fill(color(251, 204, 232))
+    square(20, 20, 50);
+    fill(color(192, 254, 169));
+    square(70, 20, 50);
 
     background(color(251, 204, 232));
     fill(color(252, 146, 32));
@@ -45,6 +49,11 @@ function changeTheme(colString) {
     text("Lucy Laidlaw", width/2+2, height/2+2);
 
   } else if(colString=="Green") {
+
+    fill(color(251, 204, 232))
+    square(20, 20, 50);
+    fill(color(192, 254, 169));
+    square(70, 20, 50);
 
     background(color((192, 254, 169)));
     fill(color(1, 137, 34));
