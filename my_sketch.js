@@ -9,17 +9,11 @@ function draw() {
 
   drawSquares();
 
+
+  printText();
+
   let pink_dist = dist(mouseX, mouseY, 20+20, 20+20);
   let green_dist = dist(mouseX, mouseY, 20+40+20, 20+20);
-
-
-  textSize(50);
-  textFont(cool_font);
-  textAlign(CENTER);
-  fill(color(2, 53, 86));
-  text("Lucy Laidlaw", width/2, height/2);
-  fill(color(143, 206, 236));
-  text("Lucy Laidlaw", width/2+2, height/2+2);
 
   if(pink_dist <= 25) {
     changeTheme("Pink");
@@ -29,6 +23,16 @@ function draw() {
     changeTheme("Green");
   }
 
+}
+
+function printText() {
+  textSize(50);
+  textFont(cool_font);
+  textAlign(CENTER);
+  fill(color(2, 53, 86));
+  text("Lucy Laidlaw", width/2, height/2);
+  fill(color(143, 206, 236));
+  text("Lucy Laidlaw", width/2+2, height/2+2);
 }
 
 function changeTheme(colString) {
