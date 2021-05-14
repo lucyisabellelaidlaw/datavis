@@ -8,9 +8,9 @@ function draw() {
   background(color(189, 230, 249));
 
   drawSquares();
-
-
   printText();
+
+  
 
   let pink_dist = dist(mouseX, mouseY, 20+20, 20+20);
   let green_dist = dist(mouseX, mouseY, 20+40+20, 20+20);
@@ -26,6 +26,7 @@ function draw() {
 }
 
 function printText() {
+  //Prints the text of my name in the middle of the screen
   textSize(50);
   textFont(cool_font);
   textAlign(CENTER);
